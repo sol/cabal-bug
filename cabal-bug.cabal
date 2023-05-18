@@ -1,0 +1,12 @@
+cabal-version: 3.0
+
+name:           cabal-bug
+version:        0.0.0
+
+executable main
+  main-is: main.hs
+  build-tool-depends: cabal-bug:pre-processor
+
+executable pre-processor
+  main-is: pre-processor.hs
+  build-depends: base ==4.*
